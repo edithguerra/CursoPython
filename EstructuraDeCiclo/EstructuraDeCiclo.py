@@ -45,5 +45,30 @@ for intentos in range(1,4):
     else:
         print('password incorrecto sigue intentando')
 
+##tabla d multiplicar del 1 al 10
+for tabla in range(0,11):
+    print('tabla del', tabla)
+    for num in range(11):
+        print(tabla, 'x', num,'=',tabla*num)
 
+##tabla d multiplicar del 1 al 10
+evaluar=True
+while evaluar==True:
+  numero=int(input('ingrese el numero de la tabla'))
+  if numero==0:
+      print('saliendo del programa')
+      break
+for numeros in range (1,11):
+    print(numeros,'x',numero,'=' ,numeros*numero)
+
+mensaje='hola'
+print(mensaje[3])
+for letra in mensaje:
+    print (letra)
+##print(mensaje[3])
+
+mensaaje=(input('ingrese un mensaje'))
+#mostrar por consola cuantas vocales 'a' tiene el mensaje
+for letra in mensaje:
+    print(letra)
 

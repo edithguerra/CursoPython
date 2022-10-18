@@ -14,3 +14,10 @@
 #que son los resultados de la suma y el producto de los valores ingresados. En el simbolo de impresion
 #podemos indicar una o mas salidas, eso queda a criterio del programador, lo mismo para indicar las entradas
 #por teclado.
+#mostrar por consola cuantas vocales 'a' tiene el mensaje
+mensaaje=(input('ingrese un mensaje'))
+contador=0
+for letras in mensaaje:
+    if letras=='a':
+        contador+=1
+print('en este mensaje tienes', contador,'a')

@@ -37,7 +37,46 @@ else:
     print("F")
 
 
+operacion='suma'
+match operacion:
+    case'suma':
+        print('realizare una suma')
+    case 'resta':
+        print('realizare una resta')
+    case 'multiplicacion':
+        print('realizare una multiplicacion')
+    case _:
+        print('no hay operacion')
 
+##tendremos una variable con el mensaje hola mundo, pedimos al usuario un texto,
+##si el texto ingresado es hola, mostraras el mensaje completo
+##si el texto ingresado es como estas, extraeras del mensaje la palabra hola
+##si el texto ingresado es saludos, extraeras del mensaje la palabra mundo
+##si se ingresa otro texto, mostrara por defecto el mensaje de error
+mensaje='hola mundo'
+texto=input('ingresa un texto')
+match texto:
+    case 'hola':
+        print(mensaje[:])
+    case 'como estas':
+        print(mensaje[:4])
+    case 'saludos':
+        print(mensaje[5:])
+    case _:
+         print('error')
+
+##convirtiendo match a if
+mensaje='hola mundo'
+texto=input('ingresa un texto')
+if texto:
+    if texto=='hola':
+        print(mensaje[:])
+    elif texto=='como estas':
+        print(mensaje[:4])
+    elif texto=='saludos':
+        print(mensaje[5:])
+    else:
+         print('error')
 
 
 

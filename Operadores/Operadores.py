@@ -51,5 +51,8 @@
 # and devuelve True si ambos operadores son True.
 # or devuelve True si alguno de los operadores es True.
 # not devuelve True si alguno de los operadores es False
+# operador foca
+texto='hola mundo'
+print(texto[5:])
 
 
