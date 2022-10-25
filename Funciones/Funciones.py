@@ -30,3 +30,51 @@ def saludo():
     return "hola"
 #usom de funcion
 print(saludo())
+
+#escfribir un programa que muestre el eco de todo lo que el usuario introdustca hasta que el
+#usuario escriba  'salir' para terminar la ejecucion
+palabra=''
+while palabra!='salir':
+    palabra=input('escriba una palabra:')
+    print(palabra)
+
+#con for
+contador=0
+for num in range(0,contador):
+    palabra = input('ingresa una palabra:')
+    if palabra=='salir':
+        break
+    contador+=1
+
+#otra manera
+sentence=input('ingrese una oracion: ')
+sentence2=input('ingrese otro texto: ')
+def countVocals(texto):
+    vocales=['a','e','i','o','u']
+    contadorVocales=0
+    for letras in texto:
+        if letras in vocales:
+            contadorVocales+=1
+    return contadorVocales
+print('la cantidad de vocales es:', countVocals(sentence))
+print('la cantidad de vocales es:', countVocals(sentence2))
+
+#ejercicios
+def mensaje(nombre,apellido,accion):
+    if accion=='saludo':
+        mensaje='hola' ,nombre ,apellido, 'como estas'
+    elif accion=='despedida':
+        mensaje='adios' ,nombre ,apellido
+    return mensaje
+print (mensaje('Edith','Guerra','despedida'))
+
+#forma 2
+sentece=input('enter sentence:')
+vocales=['a','e','i','0','u']
+def countvocal(oracion,vocal):
+    contador=0
+    for word in oracion:
+        if word in vocal:
+            contador+=1
+    return contador
+print(countvocal(sentece,vocales))

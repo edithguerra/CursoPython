@@ -71,4 +71,3 @@ mensaaje=(input('ingrese un mensaje'))
 #mostrar por consola cuantas vocales 'a' tiene el mensaje
 for letra in mensaje:
     print(letra)
-
