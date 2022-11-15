@@ -71,3 +71,57 @@ mensaaje=(input('ingrese un mensaje'))
 #mostrar por consola cuantas vocales 'a' tiene el mensaje
 for letra in mensaje:
     print(letra)
+
+
+##clase 07/11/2022
+mensajeOpciones="""
+===================
+selecciona una opcion
+ 1)suma 
+ 2)resta
+ 3)division
+ 4)multilplicacion
+ 5)salir
+===================
+"""
+while True:
+    print (mensajeOpciones)
+    opcion=input('ingresa una opcion valida entre (1-5):')
+    numeroUno=int(input('ingresa el primer numero'))
+    numeroDos=int(input('ingresa el segundo numero'))
+    match opcion:
+        case '1':
+            print(f'la suma de{numeroUno}+{numeroDos}={numeroUno + numeroDos}')
+        case '2':
+            print(f'la resta de{numeroUno}-{numeroDos}={numeroUno - numeroDos}')
+        case '3':
+            print(f'la multiplicacion de{numeroUno}*{numeroDos}={numeroUno * numeroDos}')
+        case '4':
+            print(f'la division de{numeroUno}/{numeroDos}={numeroUno / numeroDos}')
+        case '5':
+            break
+        case __:
+            print('esta opcion no existe')
+
+
+##practica
+numero = int(input('ingresa el numero de una opcion 1=suma 2=resta 3=multiplicacion 4=division'))
+numero1 = int(input('ingresa el primer numero '))
+numero2 = int(input('ingresa el segundo numero '))
+if numero==1:
+        suma = numero1 + numero2
+        print('el resultado es',suma)
+elif numero==2:
+        resta = numero1 - numero2
+        print('el resultado es',resta)
+elif numero==3:
+        multiplicacion = numero1 * numero2
+        print('el resultado es',multiplicacion)
+elif numero ==4:
+        division = numero1 / numero2
+        print('el resultado es',division)
+else:
+         print('salir')
+numero = True
+while numero == True:
+   otraOpcion = int(input('ingresa otra opcion'))

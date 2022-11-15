@@ -78,3 +78,104 @@ def countvocal(oracion,vocal):
             contador+=1
     return contador
 print(countvocal(sentece,vocales))
+
+#TAREA
+##crear una funcion de operadores aritmeticos matematicos
+def suma(a,b):
+    resultado = a+b
+    return resultado
+print(suma(5,6))
+def resta(a,b):
+    resultado = a-b
+    return resultado
+print(resta(10,6)) 
+def division(a,b):
+    resultado = a/b
+    return resultado
+print(division(10,2))
+def multiplicacion(a,b):
+    resultado = a*b
+    return resultado
+print(multiplicacion(5,6))
+
+
+##TAREA 'todo lo de match en una funcion' #operacion(numero1,numero2,operando#
+numeroUno=int(input('ingresa el primer numero'))
+numeroDos=int(input('ingresa el segundo numero'))
+def suma(numeroUno,numeroDos):
+    resultado = numeroUno+numeroDos
+    return resultado
+print(suma(numeroUno,numeroDos))
+def resta(numeroUno,numeroDos):
+    resultado = numeroUno-numeroDos
+    return resultado
+print(resta(numeroUno,numeroDos))
+def division(numeroUno,numeroDos):
+    resultado = numeroUno/numeroDos
+    return resultado
+print(division(numeroUno,numeroDos))
+def multiplicacion(numeroUno,numeroDos):
+    resultado = numeroUno*numeroDos
+    return resultado
+print(multiplicacion(numeroUno,numeroDos))
+
+
+##clase del 08/11/2022
+#1. UTILIZAR LA PALABRA RESERVADA def
+#2. asignamos un nombre a la funcion--descriptivo
+#3. siempre tiene que recibir parametros
+  # ()--no resive parametros
+  # (nombre)--que la funcion esta recibiendo un parametro
+  # (edad,nombre)
+#4.siempre la funcion tiene que retornar un tipo de dato
+def saludo():
+    respuesta='hola como estas'
+    return respuesta
+  #como uso
+  arrayAmigos=['ronal','claudio','diego','jose','edith']
+for amigo in range(0,len(arrayAmigos)):
+      print(saludo(arrayAmigos[amigo]))
+
+#    TAREA
+# crear una funcion que me retorne los n numeros fibonacci
+def numeros(n):
+    if n < 2:
+        return n
+    else:
+        return numeros(n-1)+numeros(n-2)
+for x in range(10):
+    print(numeros(x))
+
+# crear una funcion que me retorne el factorial de un numero n
+def factorial(*n):
+    for x in n:
+        fac=1
+        for Y in range (1,x+1):
+            fac=fac*Y
+            print(fac)
+factorial(5)
+
+# crear una funcion que me diga  si una palabra es palindromo
+texto =input('ingrese la palabra: ')
+revertido = texto [::-1]
+if texto == revertido:
+    print('lampalabra ingresada si es palidromo')
+else:
+    print('lampalabra ingresada no es palidromo')
+
+##clase
+def operaciones(num1,num2,operador):
+    if operador=='suma':
+        total=num1+num2
+    if operador == 'resta':
+        total = num1 - num2
+    if operador == 'multiplicacion':
+            total = num1 * num2
+    if operador == 'division':
+                total = num1 / num2
+                return total
+# llamando la funcion
+print(operaciones(10,8,'resta'))
+print(operaciones(100,20,'sumar'))
+#palabras reservadas para unir archivos (import)
+import funciones as op--#alias
